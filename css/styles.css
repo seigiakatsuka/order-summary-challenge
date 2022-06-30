@@ -1,0 +1,117 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+:root {
+  
+  --ff-primary: 'Red Hat Display', sans-serif;
+  
+  --fw-reg: 500;
+  --f1-md: 700;
+  --fw-bold: 900;
+
+  /*<-- Primary -->*/
+  --clr-Paleblue: hsl(225, 100%, 94%);
+  --clr-Brightblue: hsl(245, 75%, 52%);
+  
+  /*<--  Neutral  --> */
+  --clr-Verypaleblue: hsl(225, 100%, 98%);
+  --clr-Desaturatedblue: hsl(224, 23%, 55%);
+  --clr-Darkblue: hsl(223, 47%, 23%);
+
+
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background: cover;
+  font-family: var(--ff-primary);
+  text-align: center;
+}
+
+h1, h3, p, button, a {
+  color: var(--clr-Darkblue);
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: var(--fw-bold);
+}
+
+p {
+  font-size: 1em;
+  font-weight: var(--fw-reg);
+}
+
+
+.hero {
+  width: 375px;
+  border-top-left-radius: .8em;
+  border-top-right-radius: .8em;
+}
+
+.summary {
+background: white;  
+display: block;
+width: 375px;
+margin:200px auto;
+border-radius: .8em;
+
+
+}
+
+.order-summary {
+  margin: 10px 30px;
+  padding: 0 1em;
+}
+
+.plan-summary {
+  background: var(--clr-Verypaleblue);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: .8em;
+  border-radius: .6em;
+  height: 50px;
+  padding: 10px 20px;
+  margin: 20px 30px;
+}
+
+.change_plan{
+  font-weight: var(--fw-bold);
+  
+}
+
+.btn_pay {
+  display: block;
+  padding: 0 40px;
+  margin: 0 auto;
+  font-size: 1em;
+  color: white;
+  font-weight: var(--fw-bold);
+  background: var(--clr-Brightblue);
+  border: none;
+  border-radius: .8em;
+  width: 320px;
+  height: 50px;
+  box-shadow: 0 8px 16px var(--clr-Desaturatedblue);
+}
+.btn_cancel {
+  display: block;
+  border: none;
+  background: none;
+  font-size: 1.2em;
+  font-weight: var(--fw-bold);
+  margin: 30px auto;
+}
+
+
+
+/* -- Mobile --*/
+@media (min-width: 375px){
+
+}
+
+/* -- Desktop --*/
+
+@media (max-width: 1440px){
+
+}
